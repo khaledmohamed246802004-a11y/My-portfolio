@@ -1,0 +1,313 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="An accessible course hub for the CSD341 Software Engineering course."
+    />
+    <title>Software Engineering | Course Home</title>
+    <link rel="stylesheet" href="../CSS/styles.css" />
+  </head>
+  <body class="home-page">
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+
+    <!-- Shared site header: keep identical across all four pages. -->
+    <header class="site-header">
+      <p class="site-name">CSD341 | Software Engineering</p>
+      <nav aria-label="Main navigation">
+        <ul>
+          <li><a href="index.html" aria-current="page">Course Home</a></li>
+          <li><a href="staff.html">Course Staff</a></li>
+          <li><a href="schedule.html">Course Schedule</a></li>
+          <li><a href="register.html">Workshop Registration</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main id="main-content" class="home-content">
+      <header class="page-hero">
+        <p class="hero-label">CSD341 · COURSE OVERVIEW</p>
+        <h1>Software Engineering Course</h1>
+        <p class="lead">
+          Welcome to the CSD341 course hub. This mini-site organizes the topics
+          in the seven supplied Software Engineering lecture files, from
+          software fundamentals and development processes to Agile practices and
+          requirements engineering.
+        </p>
+      </header>
+
+      <section aria-labelledby="about-course">
+        <h2 id="about-course">About the Course</h2>
+        <p>
+          <strong>Software engineering</strong> is concerned with the theories,
+          methods, and tools used in professional software development. It
+          covers the whole production process, from early system specification
+          through development and maintenance after delivery.
+        </p>
+        <p>
+          The course emphasizes disciplined development, software quality, and
+          Agile design methods. It introduces the activities and models teams
+          use to understand a problem, plan a solution, build it, check it, and
+          respond to changing needs.
+        </p>
+        <p>
+          <em>Writing code is only one part of software engineering:</em> a
+          dependable product also needs clear requirements, suitable design,
+          validation, and ongoing evolution.
+        </p>
+        <h3>Course Information</h3>
+        <dl class="course-facts">
+          <dt>Course code</dt>
+          <dd>CSD341</dd>
+          <dt>Prerequisite</dt>
+          <dd>ISD104</dd>
+          <dt>Credit hours</dt>
+          <dd>3</dd>
+          <dt>Lecture hours</dt>
+          <dd><time datetime="PT2H">2 hours</time></dd>
+        </dl>
+        <h3>Assessment Distribution</h3>
+        <ul class="assessment-list">
+          <li>Final examination: 50%</li>
+          <li>Practical examination: 20%</li>
+          <li>Mid-term examination: 10%</li>
+          <li>Course activities: 15%</li>
+          <li>Oral examination: 5%</li>
+        </ul>
+        <p class="hint">
+          Course details and assessment percentages are transcribed from the
+          course information slide and should be confirmed against current
+          instructor announcements.
+        </p>
+      </section>
+
+      <section aria-labelledby="learning-outcomes">
+        <h2 id="learning-outcomes">Learning Outcomes</h2>
+        <p>
+          After studying the supplied course material, students should be able
+          to:
+        </p>
+        <ol>
+          <li>
+            <h3>Knowledge and Understanding</h3>
+            <ul>
+              <li>
+                Explain software engineering and distinguish generic software
+                products from customized products.
+              </li>
+              <li>
+                Recognize software quality attributes such as maintainability,
+                efficiency, correctness, reusability, portability, reliability,
+                and availability.
+              </li>
+              <li>
+                Describe software process activities and compare plan-driven,
+                Agile, and hybrid approaches.
+              </li>
+              <li>
+                Summarize the Waterfall, V-Model, Incremental, Spiral, and
+                Reuse-Oriented models.
+              </li>
+            </ul>
+          </li>
+          <li>
+            <h3>Practical Skills</h3>
+            <ul>
+              <li>
+                Explain <abbr title="Extreme Programming">XP</abbr>, Kanban, and
+                Scrum practices introduced in the lectures.
+              </li>
+              <li>
+                Identify how Agile tools such as Jira, Azure DevOps, and Trello
+                support team workflow.
+              </li>
+              <li>
+                Classify functional and non-functional requirements and describe
+                how requirements are elicited, specified, and validated.
+              </li>
+              <li>
+                Write a clear user story that identifies an actor, a goal, and
+                its benefit.
+              </li>
+            </ul>
+          </li>
+        </ol>
+      </section>
+
+      <section aria-labelledby="course-content">
+        <h2 id="course-content">Course Content</h2>
+        <p>
+          The first lecture lists the following seven course areas. The supplied
+          files provide detailed material for the first six areas and for
+          requirements engineering; a separate Software Testing lecture was not
+          included in the uploaded set.
+        </p>
+        <ol>
+          <li>Introduction to Software Engineering</li>
+          <li>Software Processes</li>
+          <li>Software Process Models</li>
+          <li>Agile Methodologies</li>
+          <li>Agile Tools</li>
+          <li>Requirements Engineering Process</li>
+          <li>
+            Software Testing — listed in the course outline; separate lecture
+            notes were not supplied
+          </li>
+        </ol>
+      </section>
+
+      <section aria-labelledby="process-activities">
+        <h2 id="process-activities">A Software Process at a Glance</h2>
+        <figure class="content-figure">
+          <img
+            src="../assets/images/software-engineering-cycle.svg"
+            alt="A circular four-stage software process diagram: specification leads to development, development leads to validation, validation leads to evolution, and evolution feeds back into specification."
+          />
+          <figcaption>
+            The lectures describe four recurring process activities. Feedback
+            and changing customer needs can send the work back to an earlier
+            activity.
+          </figcaption>
+        </figure>
+        <p>
+          These activities provide a useful high-level view of software
+          development. The exact workflow may be linear, iterative,
+          evolutionary, or parallel, depending on the project and its
+          constraints.
+        </p>
+      </section>
+
+      <section aria-labelledby="key-terms">
+        <h2 id="key-terms">Key Course Terms</h2>
+        <dl>
+          <dt>Software product</dt>
+          <dd>
+            A software system together with its associated documentation.
+            Products may be generic or customized for a particular customer.
+          </dd>
+          <dt>Software process</dt>
+          <dd>
+            A structured set of activities required to develop and maintain a
+            software system.
+          </dd>
+          <dt>Functional requirement</dt>
+          <dd>
+            A statement describing a service the system should provide or how it
+            should respond to an input or situation.
+          </dd>
+          <dt>Non-functional requirement</dt>
+          <dd>
+            A statement describing a system property or constraint, such as
+            reliability, response time, or storage requirements.
+          </dd>
+          <dt>Sprint</dt>
+          <dd>
+            A fixed-length Scrum development cycle in which the team works
+            toward a selected increment.
+          </dd>
+          <dt><abbr title="Work in Progress">WIP</abbr> limit</dt>
+          <dd>
+            A Kanban limit on the number of tasks allowed in progress at the
+            same time.
+          </dd>
+          <dt><abbr title="Requirements Engineering">RE</abbr></dt>
+          <dd>
+            The process of discovering, analyzing, documenting, and checking
+            system requirements.
+          </dd>
+        </dl>
+      </section>
+
+      <section aria-labelledby="learning-resources">
+        <h2 id="learning-resources">Learning Resources</h2>
+        <ul>
+          <li>
+            <a href="staff.html"
+              >View the course teaching and student-support information</a
+            >.
+          </li>
+          <li>
+            <a href="schedule.html"
+              >Explore the seven-lecture topic and activity schedule</a
+            >.
+          </li>
+          <li>
+            <a href="register.html"
+              >Request a place in a course workshop or practical session</a
+            >.
+          </li>
+          <li>
+            <a href="#learning-outcomes"
+              >Return to the course learning outcomes</a
+            >.
+          </li>
+          <li>
+            <a
+              href="https://scrumguides.org/"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Read the official Scrum Guide (opens in a new tab)</a
+            >.
+          </li>
+          <li>
+            <a
+              href="https://agilemanifesto.org/"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Read the Agile Manifesto (opens in a new tab)</a
+            >.
+          </li>
+          <li>
+            <a
+              href="../assets/downloads/software_engineering_topic_outline.txt"
+              download
+              >Download the Software Engineering lecture topic outline (TXT)</a
+            >.
+          </li>
+          <li>
+            <a
+              href="mailto:course-team@example.edu?subject=CSD341%20course%20question"
+              >Email the sample CSD341 course contact (illustrative address)</a
+            >.
+          </li>
+        </ul>
+        <p>
+          The supplied lecture material identifies
+          <cite>Software Engineering 1</cite> as the course lecture series.
+          External resources are provided as optional further reading, not as
+          replacements for the instructor's slides.
+        </p>
+      </section>
+      <aside class="page-aside" aria-labelledby="course-note">
+        <h2 id="course-note">A Note About the Lecture Set</h2>
+        <p>
+          The course outline mentions Software Testing, but the seven uploaded
+          PDFs end with Requirements Engineering Process. This site does not
+          invent missing testing lecture content; it identifies that topic as
+          part of the stated course outline only.
+        </p>
+        <p>
+          <a href="schedule.html#lecture-7"
+            >See how the supplied lecture set is represented in the schedule</a
+          >.
+        </p>
+      </aside>
+    </main>
+
+    <!-- Shared site footer: keep identical across all four pages. -->
+    <footer class="site-footer">
+      <p>CSD341 | Software Engineering</p>
+      <p>
+        Course content summarized from the seven lecture files supplied for this
+        project.
+      </p>
+      <p>
+        <a href="mailto:course-team@example.edu"
+          >Email the sample course contact (illustrative address)</a
+        >
+      </p>
+    </footer>
+  </body>
+</html>

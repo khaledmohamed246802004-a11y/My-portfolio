@@ -1,0 +1,292 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="An accessible, illustrative registration form for CSD341 Software Engineering workshops."
+    />
+    <title>Software Engineering | Workshop Registration</title>
+    <link rel="stylesheet" href="../CSS/styles.css" />
+  </head>
+  <body class="register-page">
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+
+    <!-- Shared site header: identical to the other pages apart from aria-current. -->
+    <header class="site-header">
+      <p class="site-name">CSD341 | Software Engineering</p>
+      <nav aria-label="Main navigation">
+        <ul>
+          <li><a href="index.html">Course Home</a></li>
+          <li><a href="staff.html">Course Staff</a></li>
+          <li><a href="schedule.html">Course Schedule</a></li>
+          <li>
+            <a href="register.html" aria-current="page"
+              >Workshop Registration</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main id="main-content" class="register-content">
+      <header class="page-hero">
+        <p class="hero-label">CSD341 · WORKSHOP REQUEST</p>
+        <h1>Workshop and Practical Session Registration</h1>
+        <p class="lead">
+          Use this demonstration form to request a place in a CSD341 topic
+          workshop. It is a static teaching example and does not send
+          information to a university registration system.
+        </p>
+      </header>
+
+      <form action="register.html" method="get">
+        <p class="required-note">
+          Required fields are marked in their labels. Only provide the
+          information needed to arrange the requested session.
+        </p>
+
+        <fieldset>
+          <legend>Student Contact Details</legend>
+          <div class="form-field">
+            <label for="student-name">Full name (required)</label>
+            <input
+              type="text"
+              id="student-name"
+              name="student_name"
+              autocomplete="name"
+              minlength="2"
+              maxlength="80"
+              placeholder="Enter your name"
+              required
+            />
+          </div>
+          <div class="form-field">
+            <label for="student-email">Email address (required)</label>
+            <input
+              type="email"
+              id="student-email"
+              name="student_email"
+              autocomplete="email"
+              placeholder="name@example.com"
+              required
+            />
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>Preferred Session</legend>
+          <div class="form-field">
+            <label for="session-date">Preferred date (required)</label>
+            <input type="date" id="session-date" name="session_date" required />
+          </div>
+          <div class="form-field">
+            <label for="session-time">Preferred start time (required)</label>
+            <input type="time" id="session-time" name="session_time" required />
+          </div>
+          <div class="form-field">
+            <label for="participant-count"
+              >Number of attendees (optional, 1 to 5)</label
+            >
+            <input
+              type="number"
+              id="participant-count"
+              name="participant_count"
+              min="1"
+              max="5"
+              step="1"
+              value="1"
+              aria-describedby="participant-count-hint"
+            />
+            <p class="hint" id="participant-count-hint">
+              The 1–5 range is an illustrative limit for this form, not an
+              official course capacity.
+            </p>
+          </div>
+          <fieldset>
+            <legend>Choose one session type (required)</legend>
+            <div class="choice">
+              <input
+                type="radio"
+                id="session-process"
+                name="session_type"
+                value="process-models"
+                required
+              />
+              <label for="session-process"
+                >Software Processes and Process Models</label
+              >
+            </div>
+            <div class="choice">
+              <input
+                type="radio"
+                id="session-agile"
+                name="session_type"
+                value="agile-practices"
+              />
+              <label for="session-agile"
+                >Agile Methodologies, Kanban, and Scrum</label
+              >
+            </div>
+            <div class="choice">
+              <input
+                type="radio"
+                id="session-requirements"
+                name="session_type"
+                value="requirements"
+              />
+              <label for="session-requirements"
+                >Requirements Engineering and User Stories</label
+              >
+            </div>
+          </fieldset>
+        </fieldset>
+
+        <fieldset>
+          <legend>Optional Learning Interests</legend>
+          <fieldset>
+            <legend>
+              Which topics would you like to review? Select any that apply.
+            </legend>
+            <div class="choice">
+              <input
+                type="checkbox"
+                id="topic-quality"
+                name="topic"
+                value="software-quality"
+              />
+              <label for="topic-quality">Software quality attributes</label>
+            </div>
+            <div class="choice">
+              <input
+                type="checkbox"
+                id="topic-models"
+                name="topic"
+                value="process-models"
+              />
+              <label for="topic-models"
+                >Waterfall, V-Model, Incremental, Spiral, and Reuse-Oriented
+                models</label
+              >
+            </div>
+            <div class="choice">
+              <input
+                type="checkbox"
+                id="topic-agile"
+                name="topic"
+                value="agile"
+              />
+              <label for="topic-agile">XP, Kanban, and Scrum</label>
+            </div>
+            <div class="choice">
+              <input
+                type="checkbox"
+                id="topic-tools"
+                name="topic"
+                value="agile-tools"
+              />
+              <label for="topic-tools">Jira, Azure DevOps, and Trello</label>
+            </div>
+            <div class="choice">
+              <input
+                type="checkbox"
+                id="topic-requirements"
+                name="topic"
+                value="requirements"
+              />
+              <label for="topic-requirements"
+                >Requirements elicitation and validation</label
+              >
+            </div>
+            <div class="choice">
+              <input
+                type="checkbox"
+                id="topic-testing"
+                name="topic"
+                value="software-testing"
+              />
+              <label for="topic-testing"
+                >Software testing (listed in the course outline)</label
+              >
+            </div>
+          </fieldset>
+          <div class="form-field">
+            <label for="project-url">Project or portfolio URL (optional)</label>
+            <input
+              type="url"
+              id="project-url"
+              name="project_url"
+              placeholder="https://example.com"
+              aria-describedby="project-url-hint"
+            />
+            <p class="hint" id="project-url-hint">
+              Only share a public link if it is relevant to the session.
+            </p>
+          </div>
+        </fieldset>
+
+        <div class="button-row">
+          <button type="submit">Submit session request</button>
+          <button type="reset">Clear form</button>
+          <!-- Native HTML popover gives this button a real action without JavaScript. -->
+          <button type="button" popovertarget="registration-help">
+            Show form guidance
+          </button>
+        </div>
+
+        <aside
+          id="registration-help"
+          popover
+          aria-labelledby="registration-help-title"
+        >
+          <h2 id="registration-help-title">Form Guidance</h2>
+          <p>
+            Enter your name and email, choose a preferred date and time, and
+            select one session type. The attendee count, topic interests, and
+            project URL are optional.
+          </p>
+          <p>
+            This form uses GET so the submitted name=value pairs can be
+            inspected in the URL during testing. Do not enter confidential or
+            sensitive information.
+          </p>
+        </aside>
+      </form>
+
+      <section aria-labelledby="privacy-and-method">
+        <h2 id="privacy-and-method">Data and Submission Method</h2>
+        <p>
+          This example collects only contact details and preferences needed to
+          demonstrate a workshop request. It deliberately does not ask for a
+          password, phone number, date of birth, student number, or other
+          unnecessary personal data.
+        </p>
+        <p>
+          The form uses <code>method="get"</code> for a classroom demonstration.
+          GET places submitted values in the URL, so this example must not be
+          used for confidential information or as a real registration service.
+        </p>
+        <p>
+          Review the <a href="schedule.html">course topic schedule</a> before
+          selecting a session. For course guidance, visit
+          <a href="staff.html">Course Staff and Student Support</a>.
+        </p>
+      </section>
+    </main>
+
+    <!-- Shared site footer: identical across all four pages. -->
+    <footer class="site-footer">
+      <p>CSD341 | Software Engineering</p>
+      <p>
+        Course content summarized from the seven lecture files supplied for this
+        project.
+      </p>
+      <p>
+        <a href="mailto:course-team@example.edu"
+          >Email the sample course contact (illustrative address)</a
+        >
+      </p>
+    </footer>
+  </body>
+</html>

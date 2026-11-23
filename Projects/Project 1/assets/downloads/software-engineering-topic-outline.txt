@@ -1,0 +1,43 @@
+CSD341 — Software Engineering
+Course topic outline based on the seven supplied lecture PDFs
+
+1. Introduction to Software Engineering
+   - Software and software products: generic and customized
+   - Software quality attributes
+   - Application types
+   - Professional and ethical responsibilities
+
+2. Software Processes
+   - Specification
+   - Design and implementation
+   - Validation
+   - Evolution
+   - Plan-driven, Agile, and Hybrid approaches
+
+3. Software Process Models
+   - Linear, iterative, evolutionary, and parallel process flows
+   - Waterfall and V-Model
+   - Incremental, Spiral, and Reuse-Oriented models
+
+4. Agile Methodologies
+   - Extreme Programming (XP)
+   - Kanban
+   - Scrum
+
+5. Agile Tools
+   - Jira
+   - Azure DevOps
+   - Trello
+
+6. Requirements Engineering Process
+   - System and user requirements
+   - Functional and non-functional requirements
+   - Elicitation and analysis
+   - Requirements specification and validation
+   - User stories and requirements change
+
+7. Software Testing
+   - Listed in the course outline in Lecture 01.
+   - A separate Software Testing lecture PDF was not included in the seven supplied files.
+
+Note: This outline summarizes topics; it is not a replacement for the instructor's lecture slides.
