@@ -13,7 +13,7 @@
   --text: #101928;
   --text-muted: #475569;
   --border: #cbd5d1;
-  --accent: #0f766e;
+  --accent: #0f6b63; /* Darkened slightly to meet AA on the soft surface. */
   --accent-hover: #115e59;
   --accent-soft: #ccfbf1;
   --focus: #115e59;
